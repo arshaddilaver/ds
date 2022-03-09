@@ -1,24 +1,32 @@
 #include<stdio.h>
-#include<conio.h>
 
+int MAXSIZE = 8;
+int stack[8];
+int top = -1;
 
-void main()
+int isempty()
 {
-    int i,nn,j,k,top,previous,address;
 
-
-void push(int);
-void pop(int);
-
+   if(top == -1)
+      return 1;
+   else
+      return 0;
 }
+
+int isfull()
+{
+
+   if(top == MAXSIZE)
+      return 1;
+   else
+      return 0;
+}
+
+
+
 void push()
 {
-    if (top[stack]=i)
-{
-    printf("Stack is full");
-}
-else
-{
+
     printf("enter the element to be inserted:",j);
     scanf("%d",&j);
         top=top+1;
@@ -31,12 +39,6 @@ else
 }
 void pop()
 {
-    if (top=0)
-    {
-        printf("stack is empty");
-    }
-    else
-    {
       printf("Enter the element to be deleted:",k);
       scanf("%d",&k);
       if k=element[stack]
@@ -44,8 +46,7 @@ void pop()
 
 
 
-
-    }
+}
 
 }
 void diplay()
